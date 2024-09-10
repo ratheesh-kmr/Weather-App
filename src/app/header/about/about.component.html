@@ -1,0 +1,38 @@
+<router-outlet></router-outlet>
+
+<div class="container about-container">
+  <h1>About Forecaster</h1>
+  <div class="about-content">
+    <div class="image-container left">
+     
+    </div>
+    <div class="text-content">
+      <p>
+        Welcome to Forecaster! This application provides accurate and up-to-date weather information for cities using predefined values.
+        It was created by Ratheesh Kumar using the Angular framework. Simply enter the name of a city, and you'll get the latest weather data including temperature, high and low forecasts, 
+        and a brief description of the current conditions.
+      </p>
+      <p>
+        Our goal is to make weather information easily accessible and understandable for everyone. Whether you're planning a trip, 
+        preparing for your day, or just curious about the weather, Forecaster has you covered.
+      </p>
+      <h2>Features</h2>
+      <ul>
+        <li>Predefined weather data for selected cities</li>
+        <li>High and low temperature forecasts</li>
+        <li>Weather descriptions</li>
+        <li>Built with Angular framework</li>
+      </ul>
+      <h2>About Us</h2>
+      <p>
+        Forecaster was developed by Ratheesh Kumar, a dedicated individual passionate about providing accurate and reliable weather information. 
+        By using Angular and predefined data, we aim to provide a seamless and informative weather experience.
+      </p>
+      <button (click)="getmessage()" class="button" >View Data security information</button>
+      <p *ngIf="message">{{ message }}</p>
+    </div>
+    <div class="image-container right">
+      
+    </div>
+  </div>
+</div>

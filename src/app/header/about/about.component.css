@@ -1,0 +1,74 @@
+/* Add this to your about.component.css or global styles */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.about-container {
+  background-image: url("/public/assets/bg2.jpg");
+  
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  padding: -10px;
+}
+
+.text-content {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.image-container {
+  flex: 0 0 150px; /* Adjust width as needed */
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+h1, h2 {
+  color: #020305; /* Change to a suitable color */
+}
+
+p {
+  color: #ffffff; /* Change to a suitable color */
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2575fc;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

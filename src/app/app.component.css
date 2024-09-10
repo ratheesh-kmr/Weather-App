@@ -1,0 +1,83 @@
+/* Basic Reset */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+:host {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    background: url('/assets/bg-dark.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    color: #fff;
+    height: 100vh;
+    margin: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styles */
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e5bb5;
+}
+
+.weather-info {
+    display: none;
+    margin-top: 20px;
+}
+
+.weather-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.weather-info p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.error {
+    color: #f44336;
+    margin-top: 20px;
+}
+

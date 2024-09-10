@@ -1,0 +1,37 @@
+<div class="container">
+    <h1 class="fa-solid fa-cloud"> FORECASTER</h1>
+  
+    <!-- Text input for city search -->
+    <div class="input-container">
+      <input 
+        type="text" 
+        [(ngModel)]="searchText" 
+        (input)="onSearchChange()" 
+        id="locationInput" 
+        placeholder="Enter a city"
+      />
+      
+    </div>
+  
+    <!-- Dropdown for city suggestions -->
+    <ul *ngIf="filteredCities.length > 0" id="suggestionsList">
+      <li *ngFor="let city of filteredCities" (click)="selectCity(city)">
+        {{ city }}
+      </li>
+    </ul>
+  
+    <button (click)="searchWeather()" id="searchButton">Search</button><br><br>
+    <button class="clear-button"  (click)="clearSearch()">Clear</button>
+  
+    <!-- Display Weather Data -->
+    <div *ngIf="weatherData">
+      <h2>{{ selectedCity }}</h2>
+      <p>Temperature: {{ weatherData.temperature }}</p>
+      <p>High: {{ weatherData.high }} <i class="fa-solid fa-temperature-high"></i></p>
+      <p>Low: {{ weatherData.low }} <i class="fa-solid fa-temperature-low"></i></p>
+      <p>Description: {{ weatherData.description }}</p>
+    </div>
+  
+    <p class="error" id="errorMessage">{{ errorMessage }}</p>
+  </div>
+  

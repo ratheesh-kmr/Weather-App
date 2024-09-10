@@ -1,0 +1,13 @@
+
+<div class="container">
+
+    <h1>Weather Stats for the Last 3 Days</h1>
+    <div *ngFor="let stat of weatherStats" class="weather-stat">
+      <h2>{{ stat.date | date: 'fullDate' }}</h2>
+      <p>Temperature: {{ stat.temperature }}°C</p>
+      <p>Description: {{ stat.description }}</p>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+  
